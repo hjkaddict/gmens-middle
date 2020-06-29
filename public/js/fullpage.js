@@ -763,7 +763,7 @@
                 setMouseHijack(true);
 
                 if(isUsingScrollOverflow){
-                    options.scrollOverflowHandler.setIscroll(target, true);
+                    // options.scrollOverflowHandler.setIscroll(target, true);
                 }
                 return;
             }

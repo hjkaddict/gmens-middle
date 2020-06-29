@@ -4,7 +4,8 @@
 body {
 	/* font-family: 'Niveau Grotesk Regular SC', 'Noto Sans KR'; */
 	/* font-family: 'Open Sans', sans-serif; */
-	font-family: 'Roboto', 'Noto Sans KR', 'sans-serif';
+	/* font-family: 'Roboto', 'Noto Sans KR', 'sans-serif'; */
+	font-family: 'Inter', sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 	color: gray;
@@ -260,11 +261,9 @@ td {
 	transform: translate(-50%, -50%);
 }
 
-
 .textContainer img {
 	width: 500px;
 }
-
 
 .scrollDown {
 	position: absolute;
@@ -509,7 +508,6 @@ td {
 * --------------------------------------- */
 
 #section6 .sectionContentContainer {
-	
 	line-height: 20px;
 }
 
@@ -574,6 +572,39 @@ td {
 
 /* lab Page
 * --------------------------------------- */
+
+#section7 .sectionContentContainer-full {
+	padding: 100px 0px;
+	color: black;
+}
+
+#section7 ul li {
+	float: left;
+	padding-left: 1.5vh;
+	font-size: 5vh;
+	font-weight: 100;
+	color: gray;
+	/* font-variation-settings: 'wght' 100; */
+}
+
+.fancy {
+	animation: fancy 4s ease-in-out;
+}
+
+@keyframes fancy {
+	0% {
+		font-variation-settings: 'wght' 100;
+		color: gray;
+	}
+	50% {
+		font-variation-settings: 'wght' 700;
+		color: black;
+	}
+	100% {
+		font-variation-settings: 'wght' 100;
+		color: gray;
+	}
+}
 
 /* contact Page
 * --------------------------------------- */
