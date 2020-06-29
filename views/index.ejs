@@ -404,85 +404,74 @@
 			</nav>
 			<div class="sectionContentContainer">
 				<div class="requestIntro">
-					<p>
-						<b>㈜지엠이앤에스</b>는 항상 최선을 다하여 우리 파트너와의 관계를 이어갑니다.<br>
-						개인정보 수집에 대한 동의를 한 후에 용역의뢰서 창이 보여집니다.
-					</p>
+					<p class=lang key="request-intro"></p>
 				</div>
 				<div class="requestAgreement">
-					<p>1. 개인정보의 수집목적 및 이용</p>
-					<p class="sublist">
-						가. ㈜지엠이앤에스는 다음과 같은 목적을 위하여 개인정보를 수집하고 있습니다. (서비스 제공을 위한 목적 : 본인 식별 및 회신)<br>
-						나. ㈜지엠이앤에스는 관계 법령에 의한 경우나 이용자인 정보 주체의 사전 동의를 얻는 경우를 제외하고 수집한 개인정보를 상기 목적 이외의 용도로 사용하지 않겠습니다.
-					</p>
-					<p>2. 개인정보 항목 및 수집방법<br></p>
-					<p class="sublist">가. 개인정보 항목 : 건축물명, 소재지, 연면적, 규모, 건물용도, 담당자의 성명·부서·직책·이메일·전화번호 (본인
-						확인
-						및 당사 서비스 기록을 확인하는 정보)<br>
-						나. 수집방법 이용자는 하단의 동의하십니까? 다음의 체크박스에 클릭할 경우에는 개인정보 수집에 동의한 것으로 봅니다.</p>
-					<p>3. 개인정보의 보유 및 이용기간</p>
-					<p class="sublist">
-						가. 이용자가 제공한 개인정보는 접수일로부터 1년 동안 보유, 이용하게 됩니다.<br>
-					</p>
+					<p class="lang" key="requestAgreement-1-title"></p>
+					<p class="sublist lang" key="requestAgreement-1-content">
+					</p> <br>
+					<p class="lang" key="requestAgreement-2-title"></p>
+					<p class="sublist lang" key="requestAgreement-2-content"></p><br>
+					<p class="lang" key="requestAgreement-3-title"></p>
+					<p class="sublist lang" key="requestAgreement-3-content"></p>
 				</div>
 				<div class="agreeOrNot">
-					<p>
-						회신을 위한 개인정보 저장에 동의하십니까?<br><br>
-						<input style="cursor: pointer;" type="radio" name="agreement" value="yes"><label>예</label>
-						<input style="cursor: pointer;" type="radio" name="agreement" value="no"
-							checked><label>아니오</label>
-					</p>
+					<p class="lang" key="requestAgreement-yesorno"></p><br>
+					<input style="cursor: pointer;" type="radio" name="agreement" value="yes"><label class="lang" key="yes"></label>
+					<input style="cursor: pointer;" type="radio" name="agreement" value="no" checked><label class="lang" key="no"></label>
 				</div>
 				<div class="requestContainer">
 					<form action="/request" method="post" role="form">
 						<div class="row-1">
-							<label for="field">용역의뢰분야</label><br>
+							<label class="lang" key="requestForm-field" for="field"></label><br>
 							<select id="field" name="field" required>
 								<option disabled selected></option>
-								<option value="점검">점검</option>
-								<option value="안전관리">안전관리</option>
-								<option value="도어팬테스트">Door Fan Test</option>
-								<option value="기타">기타</option>
+								<option class="lang" key="requestForm-field-1" value="점검"></option>
+								<option class="lang" key="requestForm-field-2" value="안전관리"></option>
+								<option class="lang" key="requestForm-field-3" value="도어팬테스트"></option>
+								<option class="lang" key="requestForm-field-4" value="기타"></option>
 							</select><br>
 						</div>
 						<div class="row-2">
 							<div class="col-1">
-								<label for="nameOfPlace">건축물명*</label><br>
+								<label class="lang" key="requestForm-nameOfPlace" for="nameOfPlace"></label><br>
 								<input type="text" id="nameOfPlace" name="nameOfPlace" value="" required><br>
 
-								<label for="addressOfPlace">소재지*</label><br>
+								<label class="lang" key="requestForm-addressOfPlace" for="addressOfPlace"></label><br>
 								<input type="text" id="addressOfPlace" name="addressOfPlace" value="" required><br>
 
-								<label for="GFA">연면적</label><br>
+								<label class="lang" key="requestForm-GFA" for="GFA"></label><br>
 								<input type="text" id="GFA" name="GFA" value=""><br>
 
-								<label for="size">규모</label><br>
+								<label class="lang" key="requestForm-size" for="size"></label><br>
 								<input type="text" id="size" name="size" value=""><br>
 
-								<label for="usage">건물용도</label><br>
+								<label class="lang" key="requestForm-usage" for="usage"></label><br>
 								<input type="text" id="usage" name="usage" value="">
 							</div>
 							<div class="col-2">
-								<label for="nameOfRequester">담당자 성명*</label><br>
+								<label class="lang" key="requestForm-name" for="nameOfRequester"></label><br>
 								<input type="text" id="nameOfRequester" name="nameOfRequester" value="" required><br>
 
-								<label for="positionOfRequester"> 담당자 직책</label><br>
+								<label class="lang" key="requestForm-position" for="positionOfRequester"></label><br>
 								<input type="text" id="positionOfRequester" name="positionOfRequester" value=""><br>
 
-								<label for="departmentOfRequester"> 담당자 부서</label><br>
+								<label class="lang" key="requestForm-department" for="departmentOfRequester"></label><br>
 								<input type="text" id="departmentOfRequester" name="departmentOfRequester" value=""><br>
 
-								<label for="emailOfRequester">담당자 이메일*</label><br>
+								<label class="lang" key="requestForm-email" for="emailOfRequester"></label><br>
 								<input type="email" id="emailOfRequester" name="emailOfRequester" value="" required><br>
 
-								<label for="phonenumberOfRequester"> 담당자 전화번호*</label><br>
-								<input type="text" id="phonenumberOfRequester" name="phonenumberOfRequester" value="" required>
+								<label class="lang" key="requestForm-contact" for="phonenumberOfRequester"></label><br>
+								<input type="text" id="phonenumberOfRequester" name="phonenumberOfRequester" value=""
+									required>
 							</div>
 						</div>
 
 						<div class="row-3">
-							<label for="requestContent">용역의뢰 내용*</label><br>
-							<textarea id="requestContent" name="requestContent" cols="100" rows="100" required></textarea>
+							<label class="lang" key="requestForm-content" for="requestContent"</label><br>
+							<textarea id="requestContent" name="requestContent" cols="100" rows="100"
+								required></textarea>
 						</div>
 
 						<div class="row-4">

@@ -508,6 +508,11 @@ td {
 /* request Page
 * --------------------------------------- */
 
+#section6 .sectionContentContainer {
+	
+	line-height: 20px;
+}
+
 .requestAgreement {
 	padding: 20px 0;
 }

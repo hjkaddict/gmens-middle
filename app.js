@@ -1,3 +1,6 @@
+// - 용역의뢰 영문
+// - 용역의뢰 send 눌렀을때 redirect 
+
 const express = require('express')
 const ejs = require('ejs')
 const path = require('path')
