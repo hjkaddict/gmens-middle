@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
 
 app.post('/request', (req, res) => {
     // Instantiate the SMTP server
+    console.log(process.env.GMENS_EMAIL)
     const smtpTrans = nodemailer.createTransport({
         host: 'mail.gmens.co.kr',
         port: 465,
